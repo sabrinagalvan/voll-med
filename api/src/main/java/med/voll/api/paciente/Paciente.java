@@ -6,7 +6,6 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import med.voll.api.endereco.Endereco;
-import med.voll.api.medico.Especialidade;
 
 @Table(name = "pacientes")
 @Entity(name = "Paciente")
@@ -24,9 +23,16 @@ public class Paciente {
     private String cpf;
 
     @Enumerated(EnumType.STRING)
-    private Especialidade especialidade;
+    private Plano plano;
 
     @Embedded
     private Endereco endereco;
 
+    public Paciente(DadosCadastroPaciente dados) {
+        this.nome = dados.nome();
+        this.email = dados.email();
+        this.cpf = dados.cpf();
+        this.plano = Plano.valueOf(dados.plano());
+        this.endereco = new Endereco(dados.endereco());
+    }
 }

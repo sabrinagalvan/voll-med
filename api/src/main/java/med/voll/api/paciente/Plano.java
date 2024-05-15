@@ -1,6 +1,6 @@
 package med.voll.api.paciente;
 
-public enum PlanoSaude {
+public enum Plano {
 
     UNIMED,
     SULAMERICA,
