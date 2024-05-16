@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/api/api.iml" filepath="$PROJECT_DIR$/api/api.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/voll-med.iml" filepath="$PROJECT_DIR$/.idea/voll-med.iml" />
+>>>>>>> origin/feature/medico-1/4
     </modules>
   </component>
 </project>
