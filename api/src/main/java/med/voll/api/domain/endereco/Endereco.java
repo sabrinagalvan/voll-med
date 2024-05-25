@@ -4,7 +4,7 @@ import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import med.voll.api.paciente.Plano;
+import med.voll.api.domain.paciente.Plano;
 
 @Embeddable
 @Getter
