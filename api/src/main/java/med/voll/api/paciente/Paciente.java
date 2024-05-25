@@ -53,8 +53,16 @@ public class Paciente {
         return cpf;
     }
 
+    public String getTelefone() {
+        return telefone;
+    }
+
     public Plano getPlano() {
         return plano;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
     }
 
     public Long getId() {

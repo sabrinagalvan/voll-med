@@ -15,6 +15,7 @@ import med.voll.api.endereco.Endereco;
 @EqualsAndHashCode(of = "id")
 public class Medico {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -53,8 +54,16 @@ public class Medico {
         return crm;
     }
 
+    public String getTelefone() {
+        return telefone;
+    }
+
     public Especialidade getEspecialidade() {
         return especialidade;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
     }
 
     public Long getId() {
@@ -77,4 +86,5 @@ public class Medico {
     public void excluir() {
         this.ativo = false;
     }
+
 }
