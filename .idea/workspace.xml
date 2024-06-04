@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cbebf30b-6464-493a-8c6e-46dacd5ea74f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/infra/TratadorDeErros.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/infra/exception/TratadorDeErros.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +84,9 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/api/src/main/resources/db/migration" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="med.voll.api.infra.exception" />
     </key>
   </component>
   <component name="RunAnythingCache">
