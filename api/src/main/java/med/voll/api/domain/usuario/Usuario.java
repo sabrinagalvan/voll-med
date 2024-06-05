@@ -61,4 +61,7 @@ public class Usuario implements UserDetails {
         return true;
     }
 
+    public String getLogin() {
+        return login;
+    }
 }
