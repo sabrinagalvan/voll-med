@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="cbebf30b-6464-493a-8c6e-46dacd5ea74f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/ConsultaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/ConsultaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/AgendaDeConsultas.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/AgendaDeConsultas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorHorarioAntecedencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorHorarioAntecedencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorHorarioFuncionamentoClinica.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorHorarioFuncionamentoClinica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorMedicoAtivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorMedicoAtivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorMedicoComOutraConsultaNoMesmoHorario.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorMedicoComOutraConsultaNoMesmoHorario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorPacienteAtivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorPacienteAtivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorPacienteSemOutraConsultaNoDia.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorPacienteSemOutraConsultaNoDia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/medico/MedicoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/medico/MedicoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/paciente/PacienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/paciente/PacienteRepository.java" afterDir="false" />
     </list>
@@ -23,8 +29,8 @@
       <list>
         <option value="Record" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
