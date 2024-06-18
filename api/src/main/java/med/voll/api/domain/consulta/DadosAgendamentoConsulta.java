@@ -12,14 +12,14 @@ public record DadosAgendamentoConsulta(
         Long idMedico,
 
         @NotNull
-    Long idPaciente,
+        Long idPaciente,
 
         @NotNull
-    @Future
-    @JsonFormat(pattern = "dd/MM/yyyy HH:mm")
-    LocalDateTime data,
+        @Future
+        @JsonFormat(pattern = "dd/MM/yyyy HH:mm")
+        LocalDateTime data,
 
-    Especialidade especialidade) {
+        Especialidade especialidade) {
 
 
 }
