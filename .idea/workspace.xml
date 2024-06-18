@@ -6,17 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="cbebf30b-6464-493a-8c6e-46dacd5ea74f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/controller/ConsultaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/controller/ConsultaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/AgendaDeConsultas.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/AgendaDeConsultas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/Consulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/Consulta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/ConsultaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/ConsultaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/DadosAgendamentoConsulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/DadosAgendamentoConsulta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/DadosDetalhamentoConsulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/DadosDetalhamentoConsulta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorHorarioAntecedencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorHorarioAntecedencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorHorarioFuncionamentoClinica.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorHorarioFuncionamentoClinica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/medico/MedicoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/medico/MedicoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/paciente/PacienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/paciente/PacienteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/infra/exception/TratadorDeErros.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/infra/exception/TratadorDeErros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorAgendamentoDeConsulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/agendamento/ValidadorAgendamentoDeConsulta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorHorarioAntecedencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/agendamento/ValidadorHorarioAntecedencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorHorarioFuncionamentoClinica.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/agendamento/ValidadorHorarioFuncionamentoClinica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorMedicoAtivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/agendamento/ValidadorMedicoAtivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorMedicoComOutraConsultaNoMesmoHorario.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/agendamento/ValidadorMedicoComOutraConsultaNoMesmoHorario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorPacienteAtivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/agendamento/ValidadorPacienteAtivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/ValidadorPacienteSemOutraConsultaNoDia.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validacoes/agendamento/ValidadorPacienteSemOutraConsultaNoDia.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +28,8 @@
       <list>
         <option value="Record" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -91,11 +88,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="med.voll.api.domain.consulta.validacoes.cancelamento" />
       <recent name="med.voll.api.domain.cancelamento" />
       <recent name="med.voll.api.infra.security" />
       <recent name="med.voll.api.domain.usuario" />
       <recent name="med.voll.api.paciente" />
-      <recent name="med.voll.api.medico" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/api/src/main/resources/db/migration" />
