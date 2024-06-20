@@ -1,6 +1,7 @@
 package med.voll.api.domain.consulta;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
 @Entity(name = "Consulta")
 @Getter
 @NoArgsConstructor
+@AllArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class Consulta {
 
@@ -34,27 +36,8 @@ public class Consulta {
     @Enumerated(EnumType.STRING)
     private MotivoCancelamento motivoCancelamento;
 
-    public Consulta(Long id, Medico medico, Paciente paciente, LocalDateTime data, MotivoCancelamento motivoCancelamento) {
-    }
-
     public void cancelar(MotivoCancelamento motivo) {
         this.motivoCancelamento = motivo;
     }
 
-
-    public Long getId() {
-        return id;
-    }
-
-    public Medico getMedico() {
-        return medico;
-    }
-
-    public Paciente getPaciente() {
-        return paciente;
-    }
-
-    public LocalDateTime getData() {
-        return data;
-    }
 }

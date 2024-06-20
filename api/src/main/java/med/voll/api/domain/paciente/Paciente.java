@@ -41,34 +41,6 @@ public class Paciente {
         this.endereco = new Endereco(dados.endereco());
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public Plano getPlano() {
-        return plano;
-    }
-
-    public Endereco getEndereco() {
-        return endereco;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
     public void atualizarInformacoes(DadosAtualizacaoPaciente dados) {
         if(dados.nome() != null) {
             this.nome = dados.nome();
