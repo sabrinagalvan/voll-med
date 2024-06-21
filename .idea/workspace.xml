@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cbebf30b-6464-493a-8c6e-46dacd5ea74f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/test/java/med/voll/api/ApiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/Consulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/Consulta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/test/java/med/voll/api/domain/medico/MedicoRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/test/java/med/voll/api/domain/medico/MedicoRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +77,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/home/sabrinagalvan/workspace-projetos-estudo/workspace-spring-boot/voll-med/api/src/main/resources/db/migration",
+    "last_opened_file_path": "/home/sabrinagalvan/workspace-projetos-estudo/workspace-spring-boot/voll-med/api/src/main/resources",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -91,6 +93,7 @@
       <recent name="med.voll.api.paciente" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api/src/main/resources" />
       <recent name="$PROJECT_DIR$/api/src/main/resources/db/migration" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -115,7 +118,7 @@
       <command value="mvn clean package" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MedicoRepositoryTest">
+  <component name="RunManager" selected="JUnit.MedicoRepositoryTest.escolherMedicoAleatorioLivreNaDataCenario1">
     <configuration name="ApiApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="med.voll.api.ApiApplication" />
       <module name="api" />
@@ -159,10 +162,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MedicoRepositoryTest.escolherMedicoAleatorioLivreNaDataCenario1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="med.voll.api.domain.medico.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="med.voll.api.domain.medico" />
+      <option name="MAIN_CLASS_NAME" value="med.voll.api.domain.medico.MedicoRepositoryTest" />
+      <option name="METHOD_NAME" value="escolherMedicoAleatorioLivreNaDataCenario1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MedicoRepositoryTest" />
+        <item itemvalue="JUnit.MedicoRepositoryTest.escolherMedicoAleatorioLivreNaDataCenario1" />
         <item itemvalue="Application.ApiApplication (1)" />
+        <item itemvalue="JUnit.MedicoRepositoryTest" />
         <item itemvalue="Application.ApiApplication" />
       </list>
     </recent_temporary>
