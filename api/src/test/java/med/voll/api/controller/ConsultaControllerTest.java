@@ -2,7 +2,6 @@ package med.voll.api.controller;
 
 import med.voll.api.domain.consulta.AgendaDeConsultas;
 import med.voll.api.domain.consulta.DadosAgendamentoConsulta;
-import med.voll.api.domain.consulta.DadosCancelamentoConsulta;
 import med.voll.api.domain.consulta.DadosDetalhamentoConsulta;
 import med.voll.api.domain.medico.Especialidade;
 import org.junit.jupiter.api.DisplayName;
@@ -48,9 +47,10 @@ class ConsultaControllerTest {
     @WithMockUser
     void agendar_cenario1() throws Exception {
         var response = mvc.perform(post("/consultas"))
-        .andReturn().getResponse();
+                .andReturn().getResponse();
 
         assertThat(response.getStatus()).isEqualTo(HttpStatus.BAD_REQUEST.value());
+
     }
 
     @Test
@@ -62,24 +62,21 @@ class ConsultaControllerTest {
 
         var dadosDetalhamento = new DadosDetalhamentoConsulta(null, 2l, 5l, data);
         when(agendaDeConsultas.agendar(any())).thenReturn(dadosDetalhamento);
-
-        var response = mvc
-                .perform(
+        var response = mvc.perform(
                         post("/consultas")
                                 .contentType(MediaType.APPLICATION_JSON)
                                 .content(dadosAgendamentoConsultaJson.write(
-                                        new DadosAgendamentoConsulta( 2l, 5l, data, especialidade)
+                                        new DadosAgendamentoConsulta(2l, 5l, data, especialidade)
                                 ).getJson())
                 )
                 .andReturn().getResponse();
 
         assertThat(response.getStatus()).isEqualTo(HttpStatus.OK.value());
-
         var jsonEsperado = dadosDetalhamentoConsultaJson.write(
                 dadosDetalhamento
         ).getJson();
 
-        assertThat(response.getContentAsString()). isEqualTo(jsonEsperado);
-    }
+        assertThat(response.getContentAsString()).isEqualTo(jsonEsperado);
 
+    }
 }

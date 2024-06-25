@@ -23,13 +23,10 @@ public class Paciente {
     private String telefone;
     private String cpf;
 
-    @Enumerated(EnumType.STRING)
-    private Plano plano;
-
     @Embedded
     private Endereco endereco;
 
-    private Boolean ativo;
+    private boolean ativo;
 
     public Paciente(DadosCadastroPaciente dados) {
         this.ativo = true;
@@ -37,7 +34,6 @@ public class Paciente {
         this.email = dados.email();
         this.telefone = dados.telefone();
         this.cpf = dados.cpf();
-        this.plano = dados.plano();
         this.endereco = new Endereco(dados.endereco());
     }
 
@@ -45,14 +41,13 @@ public class Paciente {
         if(dados.nome() != null) {
             this.nome = dados.nome();
         }
-        if(dados.telefone() != null) {
+        if (dados.telefone() != null) {
             this.telefone = dados.telefone();
         }
         if(dados.endereco() != null) {
             this.endereco.atualizarInformacoes(dados.endereco());
         }
     }
-
     public void excluir() {
         this.ativo = false;
     }

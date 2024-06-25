@@ -7,6 +7,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import med.voll.api.domain.endereco.DadosEndereco;
 
+
 public record DadosCadastroPaciente(
         @NotBlank
         String nome,
@@ -19,9 +20,6 @@ public record DadosCadastroPaciente(
         @Pattern(regexp = "\\d{11}")
         String cpf,
         @NotNull
-        Plano plano,
-        @NotNull
         @Valid
         DadosEndereco endereco) {
-
 }

@@ -8,9 +8,10 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 
 @Component("ValidadorHorarioAntecedenciaAgendamento")
-public class ValidadorHorarioAntecedencia implements ValidadorAgendamentoDeConsulta{
+public class ValidadorHorarioAntecedencia implements ValidadorAgendamentoDeConsulta {
 
     public void validar(DadosAgendamentoConsulta dados) {
+
         var dataConsulta = dados.data();
         var agora = LocalDateTime.now();
         var diferencaEmMinutos = Duration.between(agora, dataConsulta).toMinutes();

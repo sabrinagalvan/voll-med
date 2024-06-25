@@ -1,10 +1,7 @@
 package med.voll.api.controller;
-
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
-import med.voll.api.domain.medico.DadosListagemMedico;
-import med.voll.api.domain.medico.Medico;
-import med.voll.api.domain.medico.MedicoRepository;
+import med.voll.api.domain.medico.*;
 import med.voll.api.domain.medico.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -61,8 +58,8 @@ public class MedicoController {
     @GetMapping("/{id}")
     public ResponseEntity detalhar(@PathVariable Long id) {
         var medico = repository.getReferenceById(id);
-
         return ResponseEntity.ok(new DadosDetalhamentoMedico(medico));
     }
+
 
 }

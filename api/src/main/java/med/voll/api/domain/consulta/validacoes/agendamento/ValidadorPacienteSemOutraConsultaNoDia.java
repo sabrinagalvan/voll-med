@@ -1,3 +1,4 @@
+
 package med.voll.api.domain.consulta.validacoes.agendamento;
 
 import med.voll.api.domain.ValidacaoException;
@@ -17,7 +18,7 @@ public class ValidadorPacienteSemOutraConsultaNoDia implements ValidadorAgendame
         var ultimoHorario = dados.data().withHour(18);
         var pacientePossuiOutraConsultaNoDia = repository.existsByPacienteIdAndDataBetween(dados.idPaciente(), primeiroHorario, ultimoHorario );
         if (pacientePossuiOutraConsultaNoDia) {
-            throw new ValidacaoException("Paciente já possui uam consulta agendada nesse dia");
+            throw new ValidacaoException("Paciente já possui uma consulta agendada nesse dia");
         }
     }
 }

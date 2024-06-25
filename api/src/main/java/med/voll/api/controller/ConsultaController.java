@@ -2,10 +2,10 @@ package med.voll.api.controller;
 
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
+import med.voll.api.domain.consulta.DadosCancelamentoConsulta;
 import med.voll.api.domain.consulta.AgendaDeConsultas;
 import med.voll.api.domain.consulta.DadosAgendamentoConsulta;
 import med.voll.api.domain.consulta.DadosDetalhamentoConsulta;
-import med.voll.api.domain.consulta.DadosCancelamentoConsulta;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
@@ -22,7 +22,7 @@ public class ConsultaController {
     @PostMapping
     @Transactional
     public ResponseEntity agendar(@RequestBody @Valid DadosAgendamentoConsulta dados) {
-        var dto = agenda.agendar(dados);
+        var dto =  agenda.agendar(dados);
         return ResponseEntity.ok(dto);
     }
 
@@ -32,5 +32,4 @@ public class ConsultaController {
         agenda.cancelar(dados);
         return ResponseEntity.noContent().build();
     }
-
 }

@@ -1,10 +1,9 @@
 package med.voll.api.domain.endereco;
 
 import jakarta.persistence.Embeddable;
-import lombok.AllArgsConstructor;;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import med.voll.api.domain.paciente.Plano;
 
 @Embeddable
 @Getter
@@ -28,6 +27,8 @@ public class Endereco {
         this.cidade = dados.cidade();
         this.numero = dados.numero();
         this.complemento = dados.complemento();
+
+
     }
 
     public void atualizarInformacoes(DadosEndereco dados) {

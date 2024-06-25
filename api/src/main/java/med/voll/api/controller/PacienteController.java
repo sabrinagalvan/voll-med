@@ -2,9 +2,7 @@ package med.voll.api.controller;
 
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
-import med.voll.api.domain.paciente.DadosListagemPaciente;
-import med.voll.api.domain.paciente.Paciente;
-import med.voll.api.domain.paciente.PacienteRepository;
+import med.voll.api.domain.paciente.*;
 import med.voll.api.domain.paciente.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -29,14 +27,14 @@ public class PacienteController {
         var paciente = new Paciente(dados);
         repository.save(paciente);
 
-        var uri = uriBuilder.path("/paciente/{id}").buildAndExpand(paciente.getId()).toUri();
+        var uri = uriBuilder.path("/pacientes/{id}").buildAndExpand(paciente.getId()).toUri();
 
         return ResponseEntity.created(uri).body(new DadosDetalhamentoPaciente(paciente));
     }
 
     @GetMapping
     public ResponseEntity<Page<DadosListagemPaciente>> listar(@PageableDefault(size = 10, sort = {"nome"}) Pageable paginacao) {
-        var page =  repository.findAllByAtivoTrue(paginacao).map(DadosListagemPaciente::new);
+        var page = repository.findAllByAtivoTrue(paginacao).map(DadosListagemPaciente::new);
         return ResponseEntity.ok(page);
     }
 
@@ -61,8 +59,8 @@ public class PacienteController {
     @GetMapping("/{id}")
     public ResponseEntity detalhar(@PathVariable Long id) {
         var paciente = repository.getReferenceById(id);
-
         return ResponseEntity.ok(new DadosDetalhamentoPaciente(paciente));
     }
+
 
 }
